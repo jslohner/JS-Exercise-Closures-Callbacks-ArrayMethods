@@ -133,8 +133,7 @@ function processProduct(num1, num2, callback) {
  * should return 3.
 */
 function processDuplicateFree(list, callback) {
-  const uniqueList = list.filter((item, index) => list.indexOf(item) === index);
-  return callback(uniqueList);
+  return callback(list.filter((item, index) => list.indexOf(item) === index));
   // const uniqueList = new Set(list);
   // return callback([...uniqueList]);
 }
@@ -271,8 +270,8 @@ function firstNamesAllCaps(runners) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+function getRunnersByTShirtSize(runners, tShirtSize) {
+  return runners.filter(runner => runner.shirt_size === tShirtSize);
 }
 
 /**
