@@ -298,9 +298,17 @@ function tallyUpDonations(/* CODE HERE */) {
  *
  * 1. What is the difference between counter1 and counter2?
  *
+ * counter1 returns the function counter() and it creates a closure by defining the function counter().
+ * counter2 doesn't create a closure inside it, it defines the count variable outside the function, and it doesn't return a function.
+ *
  * 2. Which of the two uses a closure? How can you tell?
  *
+ * counter1 uses a closure, because it defines a function inside of the counterMaker() function, which gives the the counter() function access to the counterMaker() function's scope.
+ *
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better?
+ *
+ * counter1 is preferable when you want to assign the counter() function to a variable such as counter1 in the example. Also counter1 is good if you don't need or want a return value.
+ * counter2 is preferable when you need to store the count value, and then call the counter2() function in order to increment the count value.
  *
 */
 
