@@ -15,7 +15,7 @@
  * should return 'foofoo'.
 */
 function processFirstItem(stringList, callback) {
-  return callback(stringList[0])
+  return callback(stringList[0]);
 }
 
 // ⭐️ Example Challenge END ⭐️
@@ -159,8 +159,8 @@ function processDuplicateFree(list, callback) {
 */
 function lowerCaseStrings(strings) {
   let returnArray = [];
-  strings.forEach(string => returnArray.push(string.toLowerCase()))
-  return returnArray
+  strings.forEach(string => returnArray.push(string.toLowerCase()));
+  return returnArray;
 }
 
 /**
@@ -253,7 +253,7 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-  return runners.map(runner => `${runner.first_name.toUpperCase()}`)
+  return runners.map(runner => `${runner.first_name.toUpperCase()}`);
 }
 
 /**
